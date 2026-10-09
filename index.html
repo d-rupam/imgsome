@@ -19,12 +19,51 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOURIDHERE"></script>
+        <!-- Google Analytics -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0KYK0PKV9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-YOURIDHERE');
+      gtag('config', 'G-J0KYK0PKV9');
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rupam Das",
+      "url": "https://rupamdas.in",
+      "jobTitle": "Undergraduate Microbiology Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Microbiology, Dum Dum Motijheel College",
+        "url": "https://dumdummotijheelcollege.ac.in/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Dum Dum Motijheel College",
+          "url": "https://dumdummotijheelcollege.ac.in/",
+          "location": "Dum Dum, Kolkata, West Bengal"
+        },
+        {
+          "@type": "HighSchool",
+          "name": "PM SHRI Kendriya Vidyalaya Ordnance Factory Dum Dum",
+          "url": "https://ofdumdum.kvs.ac.in/",
+          "location": "Dum Dum, Kolkata, West Bengal"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dum Dum, Kolkata",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      }
+    }
     </script>
 
     <style>
@@ -158,12 +197,15 @@
             font-weight: 300;
         }
 
-        /* NEW UNIQUE COLORS FOR IMGSOME */
-        .theme-rose { --theme-color: #f43f5e; }    /* Compress & Optimize */
-        .theme-sky { --theme-color: #0ea5e9; }     /* Resize & ID */
-        .theme-fuchsia { --theme-color: #d946ef; } /* Edit & Effects */
-        .theme-teal { --theme-color: #14b8a6; }    /* Converters */
-        .theme-indigo { --theme-color: #6366f1; }  /* Security & Details */
+        /* WARM & HIGH-CONTRAST THEMES (No Purple/Green/Blue) */
+        .theme-yellow { --theme-color: #FACC15; }
+        .theme-orange { --theme-color: #FB923C; }
+        .theme-red { --theme-color: #F87171; }
+        .theme-coral { --theme-color: #FF7F50; }
+        .theme-white { --theme-color: #F8FAFC; }
+        .theme-gold { --theme-color: #FBBF24; }
+        .theme-copper { --theme-color: #D97706; }
+        .theme-slate { --theme-color: #94A3B8; }
 
         .footer {
             background-color: var(--bg-header-footer);
@@ -249,95 +291,220 @@
                 IMGsome: The Visual Ribosome
             </h1>
             <div class="custom-bio-def">
-                <p><strong>[ THE METAPHOR ]</strong> In a cell, a ribosome is the engine that takes raw instructions and easily builds them into a final, useful shape.</p>
+                <p><strong>[ THE METAPHOR ]</strong> In cellular architecture, a ribosome is the high-speed, non-membrane-bound engine strictly responsible for translating raw genetic instructions into structured, functional output.</p>
             </div>
-            <p class="custom-desc-text">Welcome to <strong>IMGsome</strong>. This is where you can easily resize, compress, crop, and edit all your pictures in one place without needing to be a tech expert.</p>
-            <p class="custom-desc-text">All these tools run safely on your own device. Your photos are never uploaded to our servers, meaning your personal pictures stay completely private.</p>
+            <p class="custom-desc-text">This subdomain operates as the active <strong>IMGsome</strong> of the ecosystem. It is a dedicated, serverless processing body engineered to ingest heavy, unoptimized visual data and instantly translate it into lightweight, functional web assets.</p>
+            <p class="custom-desc-text">Because these reactions execute entirely within the local browser memory, absolute Data Sovereignty is maintained—the raw image never leaves your machine, and the structural mutation is instantaneous.</p>
         </div>
         
-        <!-- CATEGORY: COMPRESS & OPTIMIZE (Rose Red) -->
-        <div class="category-group theme-rose">
+        <!-- CATEGORY: GENERAL COMPRESSION & QUALITY (Yellow) -->
+        <div class="category-group theme-yellow">
             <div class="category-header">
-                <i class="fa-solid fa-weight-hanging"></i> Compress & Optimize
+                <i class="fa-solid fa-weight-hanging"></i> General Compression & Quality
             </div>
             <div class="tools-grid">
-                <a href="/compress-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-compress"></i></div><div class="card-content"><h3>Image Compressor</h3><p>Make file size smaller easily.</p></div></a>
-                <a href="/reduce-size-in-kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></div><div class="card-content"><h3>Reduce Size in KB / MB</h3><p>Shrink your picture size quickly.</p></div></a>
-                <a href="/compress-to-exact-kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-bullseye"></i></div><div class="card-content"><h3>Exact Target Sizes</h3><p>Compress to 20KB, 50KB, 100KB or 2MB.</p></div></a>
-                <a href="/ai-photo-enhancer/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div class="card-content"><h3>AI Photo Enhancer</h3><p>Make low-quality photos look clear.</p></div></a>
-                <a href="/increase-image-quality/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div><div class="card-content"><h3>Increase Image Quality</h3><p>Improve picture details easily.</p></div></a>
-                <a href="/super-resolution/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-expand"></i></div><div class="card-content"><h3>Super Resolution</h3><p>Upscale image with AI safely.</p></div></a>
-                <a href="/convert-mb-to-kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-exchange-alt"></i></div><div class="card-content"><h3>MB to KB Converter</h3><p>Change big files into smaller KB files.</p></div></a>
+                <a href="/compress-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-compress"></i></div><div class="card-content"><h3>Image Compressor</h3><p>Reduce image size dynamically.</p></div></a>
+                <a href="/reduce-image-size-in-kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></div><div class="card-content"><h3>Reduce Size in KB</h3><p>Shrink photo size in kilobytes.</p></div></a>
+                <a href="/reduce-image-size-in-mb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></div><div class="card-content"><h3>Reduce Size in MB</h3><p>Shrink heavy photo size in megabytes.</p></div></a>
+                <a href="/convert-jpg-to-kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>JPG to KB</h3><p>Compress JPG formats to target KB.</p></div></a>
+                <a href="/convert-mb-to-kb-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-exchange-alt"></i></div><div class="card-content"><h3>Convert MB to KB</h3><p>Downscale megabytes into kilobytes.</p></div></a>
+                <a href="/convert-kb-to-mb-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-exchange-alt"></i></div><div class="card-content"><h3>Convert KB to MB</h3><p>Upscale kilobytes into megabytes.</p></div></a>
+                <a href="/increase-image-quality/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-arrow-up-right-dots"></i></div><div class="card-content"><h3>Increase Image Quality</h3><p>Enhance the resolution and details.</p></div></a>
+                <a href="/convert-image-dpi/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-print"></i></div><div class="card-content"><h3>Convert DPI (200, 300, 600)</h3><p>Adjust the print density of an image.</p></div></a>
+                <a href="/check-image-dpi/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div><div class="card-content"><h3>Check Image DPI</h3><p>Verify current image print density.</p></div></a>
+                <a href="/super-resolution-ai/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div class="card-content"><h3>Super Resolution</h3><p>Upscale low-res photos locally.</p></div></a>
+                <a href="/upscale-image-with-ai/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-robot"></i></div><div class="card-content"><h3>Upscale Image With AI</h3><p>Sharpen and upscale via browser AI.</p></div></a>
+                <a href="/ai-photo-enhancer/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-bolt"></i></div><div class="card-content"><h3>AI Photo Enhancer</h3><p>Clean noise and fix lighting.</p></div></a>
             </div>
         </div>
 
-        <!-- CATEGORY: RESIZE & ID PHOTOS (Sky Blue) -->
-        <div class="category-group theme-sky">
+        <!-- CATEGORY: EXACT TARGET SIZES (Orange) -->
+        <div class="category-group theme-orange">
             <div class="category-header">
-                <i class="fa-solid fa-crop-simple"></i> Resize, Crop & ID Photos
+                <i class="fa-solid fa-bullseye"></i> Exact Target Sizes
             </div>
             <div class="tools-grid">
-                <a href="/resize-image-pixel/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-arrows-up-down-left-right"></i></div><div class="card-content"><h3>Resize Image Pixel</h3><p>Change width and height of pictures.</p></div></a>
-                <a href="/resize-in-cm-mm-inches/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-ruler"></i></div><div class="card-content"><h3>Resize in CM, MM, Inches</h3><p>Set exact physical print sizes.</p></div></a>
-                <a href="/passport-photo-maker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-id-badge"></i></div><div class="card-content"><h3>Passport Photo Maker</h3><p>Create red or white background ID photos.</p></div></a>
-                <a href="/official-photo-sizes/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><div class="card-content"><h3>Official Exam Sizes</h3><p>Resize for SSC, PAN, UPSC, PSC exams.</p></div></a>
-                <a href="/exact-photo-sizes/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-id-card"></i></div><div class="card-content"><h3>Standard ID Sizes</h3><p>Get 3.5x4.5cm, 2x2 Inch, or 4x6 Inch.</p></div></a>
-                <a href="/resize-signature/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-signature"></i></div><div class="card-content"><h3>Resize Signature</h3><p>Make your sign 6x2cm or 50x20mm.</p></div></a>
-                <a href="/social-media-resize/" class="tool-card"><div class="card-icon"><i class="fa-brands fa-instagram"></i></div><div class="card-content"><h3>Social Media Resizer</h3><p>IG No Crop, WhatsApp DP, YouTube Banner.</p></div></a>
-                <a href="/bulk-image-resizer/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-layer-group"></i></div><div class="card-content"><h3>Bulk Image Resizer</h3><p>Resize many pictures at once.</p></div></a>
-                <a href="/crop-image-tools/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop"></i></div><div class="card-content"><h3>Crop Image Tools</h3><p>Freehand, Circle Crop, Square Crop.</p></div></a>
+                <a href="/compress-image-to-5kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 5KB</h3><p>Shrink image to exactly 5KB.</p></div></a>
+                <a href="/compress-jpeg-to-10kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 10KB</h3><p>Shrink JPEG to exactly 10KB.</p></div></a>
+                <a href="/compress-image-to-15kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 15KB</h3><p>Shrink image to exactly 15KB.</p></div></a>
+                <a href="/compress-image-to-20kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 20KB</h3><p>Shrink image to exactly 20KB.</p></div></a>
+                <a href="/compress-image-20kb-to-50kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress 20KB-50KB</h3><p>Set a custom target within range.</p></div></a>
+                <a href="/compress-jpeg-to-25kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 25KB</h3><p>Shrink JPEG to exactly 25KB.</p></div></a>
+                <a href="/compress-jpeg-to-30kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 30KB</h3><p>Shrink JPEG to exactly 30KB.</p></div></a>
+                <a href="/compress-jpeg-to-40kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 40KB</h3><p>Shrink JPEG to exactly 40KB.</p></div></a>
+                <a href="/compress-image-to-50kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 50KB</h3><p>Shrink image to exactly 50KB.</p></div></a>
+                <a href="/compress-image-to-60kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 60KB</h3><p>Shrink image to exactly 60KB.</p></div></a>
+                <a href="/compress-image-to-70kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 70KB</h3><p>Shrink image to exactly 70KB.</p></div></a>
+                <a href="/compress-image-to-80kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 80KB</h3><p>Shrink image to exactly 80KB.</p></div></a>
+                <a href="/compress-image-to-90kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 90KB</h3><p>Shrink image to exactly 90KB.</p></div></a>
+                <a href="/resize-image-to-50kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-expand"></i></div><div class="card-content"><h3>Resize to 50KB</h3><p>Adjust dimensions to hit 50KB.</p></div></a>
+                <a href="/compress-image-to-100kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 100KB</h3><p>Shrink image to exactly 100KB.</p></div></a>
+                <a href="/compress-jpeg-to-150kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 150KB</h3><p>Shrink JPEG to exactly 150KB.</p></div></a>
+                <a href="/compress-image-to-200kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 200KB</h3><p>Shrink image to exactly 200KB.</p></div></a>
+                <a href="/resize-image-to-200kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-expand"></i></div><div class="card-content"><h3>Resize to 200KB</h3><p>Adjust dimensions to hit 200KB.</p></div></a>
+                <a href="/compress-jpeg-to-300kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 300KB</h3><p>Shrink JPEG to exactly 300KB.</p></div></a>
+                <a href="/compress-jpeg-to-500kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>JPEG to 500KB</h3><p>Shrink JPEG to exactly 500KB.</p></div></a>
+                <a href="/compress-image-to-1mb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 1MB</h3><p>Shrink image to exactly 1MB.</p></div></a>
+                <a href="/compress-image-to-2mb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-arrow-down"></i></div><div class="card-content"><h3>Compress to 2MB</h3><p>Shrink image to exactly 2MB.</p></div></a>
             </div>
         </div>
 
-        <!-- CATEGORY: EDIT & SPECIAL EFFECTS (Fuchsia Purple) -->
-        <div class="category-group theme-fuchsia">
+        <!-- CATEGORY: RESIZE & ID SIZES (Red) -->
+        <div class="category-group theme-red">
+            <div class="category-header">
+                <i class="fa-solid fa-id-badge"></i> Resize & Official Sizes
+            </div>
+            <div class="tools-grid">
+                <a href="/resize-image-by-pixel/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-arrows-up-down-left-right"></i></div><div class="card-content"><h3>Resize Image by Pixel</h3><p>Set custom pixel width and height.</p></div></a>
+                <a href="/resize-image-in-centimeters/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-ruler"></i></div><div class="card-content"><h3>Resize in Centimeters</h3><p>Resize image to cm dimensions.</p></div></a>
+                <a href="/resize-image-in-millimeters/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-ruler"></i></div><div class="card-content"><h3>Resize in Millimeters</h3><p>Resize image to mm dimensions.</p></div></a>
+                <a href="/resize-image-in-inches/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-ruler"></i></div><div class="card-content"><h3>Resize in Inches</h3><p>Resize image to inch dimensions.</p></div></a>
+                <a href="/bulk-image-resizer/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-layer-group"></i></div><div class="card-content"><h3>Bulk Image Resizer</h3><p>Resize multiple files at once.</p></div></a>
+                <a href="/resize-a4-size-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file"></i></div><div class="card-content"><h3>A4 Size</h3><p>Resize image to exact A4 print size.</p></div></a>
+                <a href="/ssc-photo-resize/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-building-columns"></i></div><div class="card-content"><h3>SSC Photo Resize</h3><p>Format for SSC exams.</p></div></a>
+                <a href="/pan-card-photo-resize/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-id-card"></i></div><div class="card-content"><h3>PAN Card Photo</h3><p>Format for PAN card application.</p></div></a>
+                <a href="/upsc-photo-resize/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-landmark"></i></div><div class="card-content"><h3>UPSC Photo</h3><p>Format for UPSC application.</p></div></a>
+                <a href="/psc-photo-resize/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><div class="card-content"><h3>PSC Photo</h3><p>Format for State PSC applications.</p></div></a>
+                <a href="/online-passport-photo-maker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-camera"></i></div><div class="card-content"><h3>Passport Photo Maker</h3><p>Generate standard passport images.</p></div></a>
+                <a href="/red-background-passport-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-image"></i></div><div class="card-content"><h3>Red Background Passport</h3><p>Add a red background to your ID.</p></div></a>
+                <a href="/white-background-passport-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-image"></i></div><div class="card-content"><h3>White Background Passport</h3><p>Add a white background to your ID.</p></div></a>
+                <a href="/resize-signature-6cm-x-2cm/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-signature"></i></div><div class="card-content"><h3>Resize Sign 6cm x 2cm (300 DPI)</h3><p>Format signature for forms.</p></div></a>
+                <a href="/resize-image-3-5cm-x-4-5cm/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>3.5cm x 4.5cm</h3><p>Standard exact dimension crop.</p></div></a>
+                <a href="/resize-signature-50mm-x-20mm/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-signature"></i></div><div class="card-content"><h3>Signature 50mm x 20mm</h3><p>Standard exact signature dimension.</p></div></a>
+                <a href="/resize-image-35mm-x-45mm/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>35mm x 45mm</h3><p>Standard exact dimension crop.</p></div></a>
+                <a href="/resize-image-2x2-inch/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>2 x 2 Inch</h3><p>Standard US Passport dimension crop.</p></div></a>
+                <a href="/resize-image-3x4-inch/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>3 x 4 Inch</h3><p>Standard dimension crop.</p></div></a>
+                <a href="/resize-image-4x6-inch/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>4 x 6 Inch</h3><p>Standard photo print dimension crop.</p></div></a>
+                <a href="/resize-image-600x600-pixels/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>600x600 Pixels</h3><p>Standard square pixel crop.</p></div></a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: SOCIAL MEDIA SIZES (Coral) -->
+        <div class="category-group theme-coral">
+            <div class="category-header">
+                <i class="fa-solid fa-hashtag"></i> Social Media Sizing
+            </div>
+            <div class="tools-grid">
+                <a href="/instagram-no-crop-image/" class="tool-card"><div class="card-icon"><i class="fa-brands fa-instagram"></i></div><div class="card-content"><h3>Instagram (No Crop)</h3><p>Fit full picture to IG square.</p></div></a>
+                <a href="/instagram-grid-maker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-table-cells"></i></div><div class="card-content"><h3>Instagram Grid Maker</h3><p>Split picture into a multi-post grid.</p></div></a>
+                <a href="/whatsapp-dp-resizer/" class="tool-card"><div class="card-icon"><i class="fa-brands fa-whatsapp"></i></div><div class="card-content"><h3>WhatsApp DP</h3><p>Format perfectly for WhatsApp profile.</p></div></a>
+                <a href="/youtube-banner-resizer/" class="tool-card"><div class="card-icon"><i class="fa-brands fa-youtube"></i></div><div class="card-content"><h3>YouTube Banner</h3><p>Format to YouTube channel dimensions.</p></div></a>
+                <a href="/zoom-out-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-magnifying-glass-minus"></i></div><div class="card-content"><h3>Zoom Out Image</h3><p>Add padding to see the full photo.</p></div></a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: FORMAT CONVERSIONS (White/Silver) -->
+        <div class="category-group theme-white">
+            <div class="category-header">
+                <i class="fa-solid fa-right-left"></i> Format Conversions
+            </div>
+            <div class="tools-grid">
+                <a href="/universal-image-converter/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>Image Converter</h3><p>Convert images between any format.</p></div></a>
+                <a href="/convert-image-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>Image to JPG</h3><p>Convert generic images to JPG.</p></div></a>
+                <a href="/convert-jpeg-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>JPEG to JPG</h3><p>Standardize JPEG extension to JPG.</p></div></a>
+                <a href="/convert-heic-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-brands fa-apple"></i></div><div class="card-content"><h3>HEIC to JPG</h3><p>Convert Apple HEIC photos.</p></div></a>
+                <a href="/convert-webp-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>WEBP to JPG</h3><p>Convert WEBP graphics to JPG.</p></div></a>
+                <a href="/convert-webp-to-png/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-image"></i></div><div class="card-content"><h3>WebP to PNG</h3><p>Convert WEBP graphics to PNG.</p></div></a>
+                <a href="/convert-avif-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>AVIF to JPG</h3><p>Convert modern AVIF to JPG.</p></div></a>
+                <a href="/convert-jfif-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>JFIF to JPG</h3><p>Convert legacy JFIF to JPG.</p></div></a>
+                <a href="/convert-jpeg-to-png/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-image"></i></div><div class="card-content"><h3>JPEG to PNG</h3><p>Convert compressed JPEG to PNG.</p></div></a>
+                <a href="/convert-png-to-jpeg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>PNG to JPEG</h3><p>Convert lossless PNG to JPEG.</p></div></a>
+                <a href="/convert-png-to-ico/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-globe"></i></div><div class="card-content"><h3>PNG to ICO</h3><p>Convert PNG to website icon file.</p></div></a>
+                <a href="/convert-image-to-word/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-word"></i></div><div class="card-content"><h3>Image to Word</h3><p>Embed image into a Word document.</p></div></a>
+                <a href="/convert-jpg-to-text/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-language"></i></div><div class="card-content"><h3>JPG to Text</h3><p>Extract words using OCR.</p></div></a>
+                <a href="/convert-png-to-text/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-language"></i></div><div class="card-content"><h3>PNG to Text</h3><p>Extract words using OCR.</p></div></a>
+                <a href="/image-to-text-ocr/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-language"></i></div><div class="card-content"><h3>Image to Text (OCR)</h3><p>Extract raw text from images.</p></div></a>
+                <a href="/favicon-generator/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-globe"></i></div><div class="card-content"><h3>Favicon Generator</h3><p>Create website favicons locally.</p></div></a>
+                <a href="/html-to-image-converter/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-code"></i></div><div class="card-content"><h3>HTML to IMAGE</h3><p>Render HTML code into a picture.</p></div></a>
+                <a href="/text-to-handwriting-converter/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div><div class="card-content"><h3>Text to Handwriting</h3><p>Turn typed text into handwriting.</p></div></a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: IMAGE TO PDF SIZES (Gold) -->
+        <div class="category-group theme-gold">
+            <div class="category-header">
+                <i class="fa-solid fa-file-pdf"></i> PDF & Image Conversions
+            </div>
+            <div class="tools-grid">
+                <a href="/convert-image-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>Image to PDF</h3><p>Compile images into a single PDF.</p></div></a>
+                <a href="/convert-pdf-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>PDF to JPG</h3><p>Extract PDF pages as JPGs.</p></div></a>
+                <a href="/convert-jpg-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>JPG to PDF</h3><p>Compile JPG files into a PDF.</p></div></a>
+                <a href="/convert-jpeg-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>JPEG to PDF</h3><p>Compile JPEG files into a PDF.</p></div></a>
+                <a href="/convert-png-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>PNG to PDF</h3><p>Compile PNG files into a PDF.</p></div></a>
+                <a href="/convert-pdf-to-png/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-image"></i></div><div class="card-content"><h3>PDF to PNG</h3><p>Extract PDF pages as PNGs.</p></div></a>
+                <a href="/convert-webp-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>WebP to PDF</h3><p>Compile WebP files into a PDF.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-50kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 50KB</h3><p>Convert and compress to 50KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-100kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 100KB</h3><p>Convert and compress to 100KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-150kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 150KB</h3><p>Convert and compress to 150KB.</p></div></a>
+                <a href="/convert-jpeg-to-pdf-under-200kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPEG to PDF 200KB</h3><p>Convert and compress to 200KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-250kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 250KB</h3><p>Convert and compress to 250KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-300kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 300KB</h3><p>Convert and compress to 300KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-400kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 400KB</h3><p>Convert and compress to 400KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-500kb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 500KB</h3><p>Convert and compress to 500KB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-1mb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 1MB</h3><p>Convert and compress to 1MB.</p></div></a>
+                <a href="/convert-jpg-to-pdf-under-2mb/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF 2MB</h3><p>Convert and compress to 2MB.</p></div></a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: EDIT, CROP & SPECIAL EFFECTS (Copper) -->
+        <div class="category-group theme-copper">
             <div class="category-header">
                 <i class="fa-solid fa-palette"></i> Edit & Special Effects
             </div>
             <div class="tools-grid">
-                <a href="/remove-background/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-eraser"></i></div><div class="card-content"><h3>Remove Background</h3><p>Delete the background from any photo.</p></div></a>
-                <a href="/blur-background/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><div class="card-content"><h3>Blur Background</h3><p>Make the background blurry like portrait mode.</p></div></a>
-                <a href="/remove-object/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-user-slash"></i></div><div class="card-content"><h3>Remove Object</h3><p>Take out unwanted things from a picture.</p></div></a>
-                <a href="/add-text-name-dob/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-font"></i></div><div class="card-content"><h3>Add Text, Name & DOB</h3><p>Write your name and date on photos.</p></div></a>
-                <a href="/rotate-flip-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-rotate-right"></i></div><div class="card-content"><h3>Rotate & Flip Image</h3><p>Turn your pictures around easily.</p></div></a>
-                <a href="/merge-join-split/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-object-group"></i></div><div class="card-content"><h3>Merge, Join & Split</h3><p>Combine photos and signatures together.</p></div></a>
-                <a href="/blur-pixelate-face/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-mask"></i></div><div class="card-content"><h3>Blur & Pixelate Face</h3><p>Hide faces in pictures to protect privacy.</p></div></a>
-                <a href="/photo-collage-maker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-border-all"></i></div><div class="card-content"><h3>Photo Collage Maker</h3><p>Put many photos into one nice frame.</p></div></a>
-                <a href="/color-effects/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-fill-drip"></i></div><div class="card-content"><h3>Color & B&W Effects</h3><p>Grayscale, Black & White, and Image Color Picker.</p></div></a>
-                <a href="/blemishes-remover/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-face-smile"></i></div><div class="card-content"><h3>Blemishes Remover</h3><p>Clean up and retouch your selfies easily.</p></div></a>
-                <a href="/deep-fry-meme/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-fire"></i></div><div class="card-content"><h3>Deep Fry & Meme Maker</h3><p>Make funny meme photos quickly.</p></div></a>
+                <a href="/blur-image-background/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><div class="card-content"><h3>Blur Background</h3><p>Apply portrait blur locally.</p></div></a>
+                <a href="/remove-image-background/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-user-slash"></i></div><div class="card-content"><h3>Remove Background</h3><p>Erase background via AI.</p></div></a>
+                <a href="/remove-object-from-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-eraser"></i></div><div class="card-content"><h3>Remove Object</h3><p>Erase items from picture.</p></div></a>
+                <a href="/add-name-dob-on-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-font"></i></div><div class="card-content"><h3>Add Name & DOB on Photo</h3><p>Stamp details on ID photos.</p></div></a>
+                <a href="/add-text-to-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-font"></i></div><div class="card-content"><h3>Add Text to Image</h3><p>Write directly on photos.</p></div></a>
+                <a href="/rotate-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-rotate-right"></i></div><div class="card-content"><h3>Rotate Image</h3><p>Rotate left or right.</p></div></a>
+                <a href="/flip-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-arrows-left-right"></i></div><div class="card-content"><h3>Flip Image</h3><p>Mirror image horizontally/vertically.</p></div></a>
+                <a href="/add-watermark-to-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-stamp"></i></div><div class="card-content"><h3>Watermark Images</h3><p>Add text watermark.</p></div></a>
+                <a href="/add-logo-to-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-stamp"></i></div><div class="card-content"><h3>Add Logo to Image</h3><p>Add image watermark.</p></div></a>
+                <a href="/freehand-crop-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-scissors"></i></div><div class="card-content"><h3>Freehand Crop</h3><p>Cut freely.</p></div></a>
+                <a href="/circle-crop-image/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-circle"></i></div><div class="card-content"><h3>Circle Crop</h3><p>Crop into perfect circle.</p></div></a>
+                <a href="/square-crop-image/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-square"></i></div><div class="card-content"><h3>Square Crop</h3><p>Crop into perfect square.</p></div></a>
+                <a href="/crop-png-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop-simple"></i></div><div class="card-content"><h3>Crop PNG</h3><p>Crop transparent files.</p></div></a>
+                <a href="/round-image-corners/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-vector-square"></i></div><div class="card-content"><h3>Round Corners</h3><p>Smooth the edges of photo.</p></div></a>
+                <a href="/change-image-aspect-ratio/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-crop"></i></div><div class="card-content"><h3>Change Aspect Ratio</h3><p>Adjust width/height ratio.</p></div></a>
+                <a href="/merge-photo-and-signature/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-object-group"></i></div><div class="card-content"><h3>Merge Photo & Signature</h3><p>Combine ID elements.</p></div></a>
+                <a href="/join-multiple-images/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-object-group"></i></div><div class="card-content"><h3>Join Multiple Images</h3><p>Stitch pictures together.</p></div></a>
+                <a href="/split-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-cut"></i></div><div class="card-content"><h3>Split Image</h3><p>Cut photo into parts.</p></div></a>
+                <a href="/photo-collage-maker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-border-all"></i></div><div class="card-content"><h3>Photo Collage Maker</h3><p>Build visual layouts.</p></div></a>
+                <a href="/image-color-picker/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-eye-dropper"></i></div><div class="card-content"><h3>Image Color Picker</h3><p>Extract HEX/RGB values.</p></div></a>
+                <a href="/beautify-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-wand-magic"></i></div><div class="card-content"><h3>Beautify Image</h3><p>Enhance colors globally.</p></div></a>
+                <a href="/deep-fry-photo-meme/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-fire"></i></div><div class="card-content"><h3>Deep Fry Photo</h3><p>Max contrast meme maker.</p></div></a>
+                <a href="/online-meme-generator/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-masks-theater"></i></div><div class="card-content"><h3>Meme Generator</h3><p>Create classic memes.</p></div></a>
+                <a href="/unblur-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-glasses"></i></div><div class="card-content"><h3>Unblur Image</h3><p>Sharpen blurry photos.</p></div></a>
+                <a href="/blur-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><div class="card-content"><h3>Blur Image</h3><p>Apply blur to full image.</p></div></a>
+                <a href="/blur-face-in-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-mask"></i></div><div class="card-content"><h3>Blur Face</h3><p>Censor faces.</p></div></a>
+                <a href="/unblur-face-in-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-face-smile"></i></div><div class="card-content"><h3>Unblur Face</h3><p>Sharpen facial details.</p></div></a>
+                <a href="/censor-photo-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-ban"></i></div><div class="card-content"><h3>Censor Photo</h3><p>Cover sensitive areas.</p></div></a>
+                <a href="/add-border-to-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-square"></i></div><div class="card-content"><h3>Add Border To Image</h3><p>Add colored frames.</p></div></a>
+                <a href="/add-white-border-to-image/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-square"></i></div><div class="card-content"><h3>Add White Border To Image</h3><p>Add Polaroid frame.</p></div></a>
+                <a href="/pixelate-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-grip"></i></div><div class="card-content"><h3>Pixelate Image</h3><p>Block out image details.</p></div></a>
+                <a href="/pixelate-face-in-photo/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-chess-board"></i></div><div class="card-content"><h3>Pixelate Face</h3><p>Block out facial features.</p></div></a>
+                <a href="/apply-motion-blur/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-wind"></i></div><div class="card-content"><h3>Motion Blur</h3><p>Add movement effect.</p></div></a>
+                <a href="/grayscale-image-converter/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-moon"></i></div><div class="card-content"><h3>Grayscale Image</h3><p>Convert to tone scale.</p></div></a>
+                <a href="/black-and-white-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-circle-half-stroke"></i></div><div class="card-content"><h3>Black & White</h3><p>Strict two-tone conversion.</p></div></a>
+                <a href="/picture-to-pixel-art/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-gamepad"></i></div><div class="card-content"><h3>Picture to Pixel Art</h3><p>Retro 8-bit generator.</p></div></a>
+                <a href="/ai-face-generator/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div><div class="card-content"><h3>AI Face Generator</h3><p>Generate faces locally.</p></div></a>
+                <a href="/blemishes-remover-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-band-aid"></i></div><div class="card-content"><h3>Blemishes Remover</h3><p>Clean facial spots.</p></div></a>
+                <a href="/retouch-image-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-paintbrush"></i></div><div class="card-content"><h3>Retouch Image</h3><p>Advanced healing brush.</p></div></a>
+                <a href="/generate-signature-online/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-signature"></i></div><div class="card-content"><h3>Generate Signature</h3><p>Draw digital signature.</p></div></a>
+                <a href="/online-photo-editor/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-pen-ruler"></i></div><div class="card-content"><h3>Photo Editor</h3><p>Full suite editor.</p></div></a>
             </div>
         </div>
 
-        <!-- CATEGORY: FORMAT CONVERSIONS (Teal Green) -->
-        <div class="category-group theme-teal">
+        <!-- CATEGORY: SECURITY & METADATA (Slate Gray) -->
+        <div class="category-group theme-slate">
             <div class="category-header">
-                <i class="fa-solid fa-right-left"></i> Format Conversions & PDF
+                <i class="fa-solid fa-shield-halved"></i> Security & Metadata
             </div>
             <div class="tools-grid">
-                <a href="/image-converter/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-image"></i></div><div class="card-content"><h3>Universal Image Converter</h3><p>Convert easily between all photo types.</p></div></a>
-                <a href="/heic-webp-avif-to-jpg/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-images"></i></div><div class="card-content"><h3>HEIC, WEBP & AVIF to JPG</h3><p>Change new phone formats to normal JPGs.</p></div></a>
-                <a href="/png-to-jpeg/" class="tool-card"><div class="card-icon"><i class="fa-regular fa-image"></i></div><div class="card-content"><h3>PNG to JPEG</h3><p>Switch transparent images to solid ones.</p></div></a>
-                <a href="/image-to-text-ocr/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-language"></i></div><div class="card-content"><h3>Image to Text (OCR)</h3><p>Copy written words directly out of a picture.</p></div></a>
-                <a href="/text-to-handwriting/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div><div class="card-content"><h3>Text to Handwriting</h3><p>Turn typed text into real-looking handwriting.</p></div></a>
-                <a href="/image-to-pdf/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="card-content"><h3>Image to PDF</h3><p>Turn your pictures into a PDF document.</p></div></a>
-                <a href="/jpg-to-pdf-sizes/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-file-zipper"></i></div><div class="card-content"><h3>JPG to PDF (Under Limit)</h3><p>Make PDFs strictly under 50KB up to 2MB.</p></div></a>
-                <a href="/html-to-image/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-code"></i></div><div class="card-content"><h3>HTML to IMAGE</h3><p>Turn website code into a picture.</p></div></a>
-            </div>
-        </div>
-
-        <!-- CATEGORY: SECURITY & DETAILS (Indigo Purple) -->
-        <div class="category-group theme-indigo">
-            <div class="category-header">
-                <i class="fa-solid fa-shield-halved"></i> Security & Details
-            </div>
-            <div class="tools-grid">
-                <a href="/watermark-images/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-stamp"></i></div><div class="card-content"><h3>Watermark Images</h3><p>Add a logo to protect your pictures.</p></div></a>
-                <a href="/view-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-circle-info"></i></div><div class="card-content"><h3>View Metadata</h3><p>See hidden camera settings and dates.</p></div></a>
-                <a href="/remove-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-trash-can"></i></div><div class="card-content"><h3>Remove Metadata</h3><p>Delete hidden location and camera info.</p></div></a>
-                <a href="/edit-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-pen-to-square"></i></div><div class="card-content"><h3>Edit Metadata</h3><p>Change the hidden details in your photo.</p></div></a>
-                <a href="/check-dpi/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div><div class="card-content"><h3>Check Image DPI</h3><p>See the print quality (DPI) of your file.</p></div></a>
-                <a href="/convert-dpi/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-print"></i></div><div class="card-content"><h3>Convert DPI</h3><p>Change photo quality to 200, 300, or 600 DPI.</p></div></a>
+                <a href="/view-image-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-circle-info"></i></div><div class="card-content"><h3>View Metadata</h3><p>See hidden camera settings.</p></div></a>
+                <a href="/remove-image-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-trash-can"></i></div><div class="card-content"><h3>Remove Metadata</h3><p>Delete location info.</p></div></a>
+                <a href="/edit-image-metadata/" class="tool-card"><div class="card-icon"><i class="fa-solid fa-pen-to-square"></i></div><div class="card-content"><h3>Edit Metadata</h3><p>Modify hidden details.</p></div></a>
             </div>
         </div>
 
