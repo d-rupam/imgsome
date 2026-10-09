@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimized Title & Meta Description -->
+    <title>Free Online Image Tools | Compress, Resize & Edit Locally - Imgsome</title>
+    <meta name="description" content="Secure, 100% free client-side image tools. Compress, crop, remove backgrounds, and convert formats directly in your browser with absolute Data Sovereignty.">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <!-- Fonts: Space Grotesk & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOURIDHERE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YOURIDHERE');
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rupam Das",
+      "url": "https://rupamdas.in",
+      "jobTitle": "Undergraduate Microbiology Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Department of Microbiology, Dum Dum Motijheel College",
+        "url": "https://dumdummotijheelcollege.ac.in/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Dum Dum Motijheel College"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dum Dum, Kolkata",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-base: #050505;
+            --bg-header-footer: #0B1121;
+            --bg-card: #121215;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --border-subtle: rgba(255, 255, 255, 0.05);
+            --cyber-orange: #FF5500;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            background-color: var(--bg-header-footer);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .brand-highlight { color: var(--cyber-orange); }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--text-main); }
+
+        main { flex: 1; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+        /* --- EXACT MATCH METAPHOR BOX (PLASMA ORANGE THEME FOR VISION/LIGHT) --- */
+        .custom-header-module { width: 100%; background: #1A0B05; border: 1px solid rgba(255, 85, 0, 0.3); border-radius: 8px; padding: 24px; margin-bottom: 35px; box-sizing: border-box; box-shadow: 0 4px 15px rgba(255, 85, 0, 0.1); }
+        .custom-tag-top { color: #FF7733; font-family: 'JetBrains Mono', monospace, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; display: block; }
+        .custom-title { display: flex; align-items: center; color: #F1F5F9; font-family: 'JetBrains Mono', monospace, sans-serif; font-size: 28px !important; font-weight: 800; margin: 0 0 20px 0 !important; border-bottom: 1px solid rgba(255, 85, 0, 0.2); padding-bottom: 12px; line-height: 1.2; text-transform: none; }
+        .custom-bio-def { background: rgba(255, 85, 0, 0.05); border-left: 3px solid #FF5500; padding: 14px 18px; margin-bottom: 20px; border-radius: 0 4px 4px 0; }
+        .custom-bio-def p { color: #94A3B8; font-family: 'Space Grotesk', sans-serif; font-size: 14px; line-height: 1.6; margin: 0; }
+        .custom-bio-def strong { color: #FF5500; }
+        .custom-desc-text { color: #E2E8F0; font-family: 'Space Grotesk', sans-serif; font-size: 15px; line-height: 1.7; margin-bottom: 15px; }
+        .custom-desc-text:last-child { margin-bottom: 0; }
+
+        /* --- CATEGORY LAYOUT --- */
+        .category-group {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+        .category-header i {
+            color: var(--theme-color);
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.6rem;
+            border-radius: 8px;
+        }
+
+        /* Desktop Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .tool-card {
+            background-color: var(--bg-base);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            transition: all 0.2s ease-in-out;
+        }
+        .tool-card:hover {
+            border-color: var(--theme-color);
+            background-color: rgba(255, 255, 255, 0.02);
+            transform: translateY(-2px);
+        }
+        .card-icon {
+            font-size: 1.4rem;
+            color: var(--theme-color);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 6px;
+        }
+        .card-content h3 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 0.2rem;
+        }
+        .card-content p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* --- THEMES (UNIQUE COLORS FOR EACH CATEGORY) --- */
+        .theme-emerald { --theme-color: #00ff88; }  /* Compress & Optimize */
+        .theme-blue    { --theme-color: #00b8ff; }  /* Resize & Crop */
+        .theme-yellow  { --theme-color: #ffcc00; }  /* Edit & Retouch */
+        .theme-crimson { --theme-color: #ff3366; }  /* Convert & Format */
+        .theme-purple  { --theme-color: #b026ff; }  /* Security & Metadata */
+
+        /* --- 3-COLUMN COMPACT FOOTER DESIGN --- */
+        .footer {
+            background-color: var(--bg-header-footer);
+            padding: 1.25rem 2rem;
+            border-top: 1px solid var(--border-subtle);
+            margin-top: auto;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 1rem;
+        }
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: flex-start;
+        }
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--text-main); }
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .footer-text a {
+            color: var(--cyber-orange);
+            text-decoration: none;
+        }
+        .footer-social {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* --- MOBILE RESPONSIVE FIXES --- */
+        @media (max-width: 768px) { 
+            main { padding: 1.5rem 1rem; }
+            .custom-header-module { padding: 18px; } 
+            .custom-title { font-size: 22px !important; } 
+            .category-group { padding: 1.25rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+            .tool-card { padding: 1rem; gap: 1rem; }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-links, .footer-social {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">
+            <i class="fa-solid fa-microscope brand-highlight" style="margin-right: 8px;"></i>
+            <span>Img<span class="brand-highlight">some</span></span>
+        </a>
+        <div class="nav-links" style="display: flex; align-items: center; gap: 1.5rem;">
+            <a href="/" style="margin-left: 0;">All Tools</a>
+            <a href="/about" style="margin-left: 0;">About</a>
+            <a href="https://github.com/d-rupam/imgsome" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository" style="font-size: 1.2rem; margin-left: 0; display: inline-flex; align-items: center;">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        
+  <!-- THE METAPHOR BLOCK (PLASMA ORANGE) -->
+        <div class="custom-header-module">
+            <span class="custom-tag-top">// THE VISUAL TRANSLATION ENGINE</span>
+            <h1 class="custom-title">
+                <i class="fa-solid fa-eye" style="color: #FF5500; margin-right: 12px; font-size: 28px;"></i>
+                Imgsome: The Visual Ribosome
+            </h1>
+            <div class="custom-bio-def">
+                <p><strong>[ THE METAPHOR ]</strong> In cellular architecture, a ribosome is the high-speed engine strictly responsible for translating raw genetic instructions into structured, functional output.</p>
+            </div>
+            <p class="custom-desc-text">This subdomain operates as the active <strong>Imgsome</strong> of the ecosystem. It is a dedicated, serverless processing body engineered to ingest heavy, unoptimized visual data and instantly translate it into lightweight, functional web assets.</p>
+            <p class="custom-desc-text">By leveraging WebAssembly (WASM) and HTML5 Canvas, all compression, AI upscaling, and metadata stripping executes strictly within your local browser memory. Total Data Sovereignty.</p>
+        </div>
+        
+        <!-- CATEGORY: COMPRESS & OPTIMIZE (Emerald Green) -->
+        <div class="category-group theme-emerald">
+            <div class="category-header">
+                <i class="fa-solid fa-weight-hanging"></i> Compress & Optimize
+            </div>
+            <div class="tools-grid">
+                <a href="/compress-image/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-compress"></i></div>
+                    <div class="card-content">
+                        <h3>Smart Image Compressor</h3>
+                        <p>Reduce file size dynamically without losing visible quality.</p>
+                    </div>
+                </a>
+                <a href="/reduce-size-in-kb/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-down-left-and-up-right-to-center"></i></div>
+                    <div class="card-content">
+                        <h3>Target Size Compressor</h3>
+                        <p>Force compress images to exactly 20KB, 50KB, or 100KB.</p>
+                    </div>
+                </a>
+                <a href="/ai-super-resolution/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="card-content">
+                        <h3>AI Super Resolution</h3>
+                        <p>Upscale and enhance low-resolution images locally using WebNN.</p>
+                    </div>
+                </a>
+                <a href="/dpi-converter/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-print"></i></div>
+                    <div class="card-content">
+                        <h3>Convert DPI</h3>
+                        <p>Adjust image density to 200, 300, or 600 DPI for printing.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: RESIZE & CROP (Neon Blue) -->
+        <div class="category-group theme-blue">
+            <div class="category-header">
+                <i class="fa-solid fa-crop-simple"></i> Resize & Dimensions
+            </div>
+            <div class="tools-grid">
+                <a href="/resize-image-pixel/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-expand"></i></div>
+                    <div class="card-content">
+                        <h3>Resize by Pixels/CM</h3>
+                        <p>Change exact dimensions in pixels, cm, mm, or inches.</p>
+                    </div>
+                </a>
+                <a href="/passport-photo-maker/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-id-badge"></i></div>
+                    <div class="card-content">
+                        <h3>Passport Photo Maker</h3>
+                        <p>Generate precise 3.5cm x 4.5cm or 2x2 inch ID photos.</p>
+                    </div>
+                </a>
+                <a href="/bulk-image-resizer/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="card-content">
+                        <h3>Bulk Image Resizer</h3>
+                        <p>Resize hundreds of images simultaneously in browser memory.</p>
+                    </div>
+                </a>
+                <a href="/social-media-resizer/" class="tool-card">
+                    <div class="card-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="card-content">
+                        <h3>Social Media Auto-Crop</h3>
+                        <p>Format for IG No-Crop, WhatsApp DP, or YouTube Banners.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: EDIT & RETOUCH (Solar Yellow) -->
+        <div class="category-group theme-yellow">
+            <div class="category-header">
+                <i class="fa-solid fa-palette"></i> Edit & Retouch
+            </div>
+            <div class="tools-grid">
+                <a href="/remove-background/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-user-slash"></i></div>
+                    <div class="card-content">
+                        <h3>AI Background Removal</h3>
+                        <p>Erase backgrounds instantly using client-side AI models.</p>
+                    </div>
+                </a>
+                <a href="/webgl-color-grading/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <div class="card-content">
+                        <h3>WebGL Color Grading</h3>
+                        <p>Professional histogram adjustments and color filtering.</p>
+                    </div>
+                </a>
+                <a href="/blur-pixelate-face/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-mask"></i></div>
+                    <div class="card-content">
+                        <h3>Censor & Blur Face</h3>
+                        <p>Auto-detect and pixelate/blur faces for privacy compliance.</p>
+                    </div>
+                </a>
+                <a href="/watermark-image/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-stamp"></i></div>
+                    <div class="card-content">
+                        <h3>Add Watermark</h3>
+                        <p>Overlay text or logo watermarks to protect your assets.</p>
+                    </div>
+                </a>
+                <a href="/deep-fry-photo/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div class="card-content">
+                        <h3>Deep Fry Photo</h3>
+                        <p>Max out saturation, contrast, and noise for meme generation.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: CONVERT & FORMAT (Crimson Red) -->
+        <div class="category-group theme-crimson">
+            <div class="category-header">
+                <i class="fa-solid fa-right-left"></i> Convert & Format
+            </div>
+            <div class="tools-grid">
+                <a href="/image-converter/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-image"></i></div>
+                    <div class="card-content">
+                        <h3>Universal Converter</h3>
+                        <p>Convert seamlessly between JPG, PNG, WEBP, and AVIF.</p>
+                    </div>
+                </a>
+                <a href="/heic-to-jpg/" class="tool-card">
+                    <div class="card-icon"><i class="fa-brands fa-apple"></i></div>
+                    <div class="card-content">
+                        <h3>HEIC to JPG</h3>
+                        <p>Convert Apple iPhone HEIC photos into standard JPEGs.</p>
+                    </div>
+                </a>
+                <a href="/image-to-pdf/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <div class="card-content">
+                        <h3>Image to PDF</h3>
+                        <p>Compile multiple images into a single PDF document.</p>
+                    </div>
+                </a>
+                <a href="/image-to-text-ocr/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-language"></i></div>
+                    <div class="card-content">
+                        <h3>Image to Text (OCR)</h3>
+                        <p>Extract raw text from images securely using WASM Tesseract.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CATEGORY: SECURITY & METADATA (Cyber Purple) -->
+        <div class="category-group theme-purple">
+            <div class="category-header">
+                <i class="fa-solid fa-shield-halved"></i> Security & Metadata
+            </div>
+            <div class="tools-grid">
+                <a href="/view-metadata/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                    <div class="card-content">
+                        <h3>View EXIF Data</h3>
+                        <p>Examine hidden camera info, GPS coordinates, and timestamps.</p>
+                    </div>
+                </a>
+                <a href="/remove-metadata/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-eraser"></i></div>
+                    <div class="card-content">
+                        <h3>Strip Metadata</h3>
+                        <p>Scrub all hidden EXIF data for absolute anonymity.</p>
+                    </div>
+                </a>
+                <a href="/forge-metadata/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-user-secret"></i></div>
+                    <div class="card-content">
+                        <h3>Forge Metadata</h3>
+                        <p>Inject custom timestamps, camera models, and GPS tags.</p>
+                    </div>
+                </a>
+                <a href="/local-steganography/" class="tool-card">
+                    <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+                    <div class="card-content">
+                        <h3>Local Steganography</h3>
+                        <p>Cryptographically hide secret text inside image pixels.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+ <!-- FOOTER START -->
+<footer class="footer">
+    <div class="footer-container" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center;">
+        <div class="footer-links" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms & Conditions</a>
+            <a href="/dmca">DMCA Policy</a>
+            <a href="/disclaimer">Disclaimer</a>
+        </div>
+        <div class="footer-text" style="width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1rem;">
+            &copy; 2026 Imgsome | Engineered by <a href="https://rupamdas.in/" target="_blank">Rupam Das</a>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER END -->
+
+</body>
+</html>
